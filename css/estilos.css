@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* @use 'nombreDelArchivoConLoQueQuieraImportar' */
 /* Para usar la variable, por ejemplo, que esté en dicho archivo debo hacer 
 nombreDelArchivoConLoQueQuieraImportar.$laVariable */
@@ -11,29 +10,37 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 /* $fuenteParaTitulos:
 $fuenteParaSubTitulos:
 $fuenteParaContenidos: */
-
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 /* .nav-bar__personalizada {
     font-family: fantasy;
 } */
-.navbar__personalizada li {
-    font-size: 1.5rem;
+.navbar__personalizada .navbar__toggler__icon__personalizado {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.navbar__personalizada .navbar__brand__personalizada {
+  font-size: 3rem;
+}
+.navbar__personalizada .nav-item {
+  font-size: 2.2rem;
+  margin-right: 35px;
+}
+.navbar__personalizada .dropdown-item {
+  font-size: 2rem;
 }
 
-.navbar__personalizada .navbar-brand__personalizada {
-    font-size: 2.5rem;
-}
-
-.navbar-nav:first-child>.nav-item {
-    margin-right: 35px;
-}
+/* .navbar-nav:first-child {
+    > .nav-item {
+        margin-right: 35px;
+    }
+} */
 
 /*# sourceMappingURL=estilos.css.map */

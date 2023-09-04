@@ -5,16 +5,24 @@
 } */
 
 .navbar__personalizada {
-        li {
-            font-size: 1.5rem;
-        }
-        .navbar-brand__personalizada {
-            font-size: 2.5rem;
-        }
+    .navbar__toggler__icon__personalizado {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .navbar__brand__personalizada {
+        font-size: 3rem;
+    }
+    .nav-item {
+        font-size: 2.2rem;
+        margin-right: 35px;
+    }
+    .dropdown-item {
+        font-size: 2rem;
+    }
 }
 
-.navbar-nav:first-child {
+/* .navbar-nav:first-child {
     > .nav-item {
         margin-right: 35px;
     }
-}
+} */
