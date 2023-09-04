@@ -1,0 +1,14 @@
+/* @use 'nombreDelArchivoConLoQueQuieraImportar' */
+/* Para usar la variable, por ejemplo, que esté en dicho archivo debo hacer 
+nombreDelArchivoConLoQueQuieraImportar.$laVariable */
+
+/* Al iniciar esto otra vez debo poner en la consola "sass --watch sass/main.scss css/estilos.css */
+
+/* @use 'partials/disciplinas';
+@use 'partials/quienesSomos';
+@use 'partials/galeria';
+@use 'partials/contacto'; */
+
+
+@use 'partials/header';
+@use 'partials/configGeneral';

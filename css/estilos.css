@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* @use 'nombreDelArchivoConLoQueQuieraImportar' */
+/* Para usar la variable, por ejemplo, que esté en dicho archivo debo hacer 
+nombreDelArchivoConLoQueQuieraImportar.$laVariable */
+/* Al iniciar esto otra vez debo poner en la consola "sass --watch sass/main.scss css/estilos.css */
+/* @use 'partials/disciplinas';
+@use 'partials/quienesSomos';
+@use 'partials/galeria';
+@use 'partials/contacto'; */
+/* $fuenteParaTitulos:
+$fuenteParaSubTitulos:
+$fuenteParaContenidos: */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* .nav-bar__personalizada {
+    font-family: fantasy;
+} */
+.navbar__personalizada li {
+    font-size: 1.5rem;
+}
+
+.navbar__personalizada .navbar-brand__personalizada {
+    font-size: 2.5rem;
+}
+
+.navbar-nav:first-child>.nav-item {
+    margin-right: 35px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
