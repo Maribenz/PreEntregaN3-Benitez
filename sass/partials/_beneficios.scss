@@ -1,0 +1,14 @@
+@use './configGeneral';
+
+
+.contenedor__sectorBeneficios {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+        .contenedor__cartaBeneficios {
+            width: 81.5%;
+                .contenedor__cartaBeneficios__informacion__texto {
+                    width: 70%;
+                }
+        }
+}

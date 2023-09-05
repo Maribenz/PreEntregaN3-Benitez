@@ -39,14 +39,15 @@
     <div class="container-fluid">
         <!-- Contenido dentro del contenedor principal -->
 
-        <!-- HEADER --> 
+        <!-- HEADER -->
         <header class="row mb-3">
             <!-- Barra de navegación -->
             <nav class="navbar__personalizada navbar sticky-top bg-dark navbar-expand-lg" data-bs-theme="dark">
                 <div class="container-fluid">
                     <!-- Contenido de la barra de navegación -->
                     <a class="navbar__brand__personalizada navbar-brand" href="#">
-                        <img src="./assets/logo-GymTotal.svg" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">
+                        <img src="./assets/logo-GymTotal.svg" alt="Logo" width="60" height="60"
+                            class="d-inline-block align-text-center">
                         Gym Total
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -60,11 +61,11 @@
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#seccion__disciplinas" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#seccion__disciplinas" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Disciplinas
                                 </a>
-                                <ul class="dropdown-menu text-center w-50 mx-auto">  
+                                <ul class="dropdown-menu text-center w-50 mx-auto">
                                     <li><a class="dropdown-item" href="#">Funcional</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
@@ -102,9 +103,9 @@
                 </div>
             </nav>
         </header>
-        <!-- MAIN --> 
+        <!-- MAIN -->
         <main class="row mb-3" style="background-color: grey;">
-            <!-- Sección de video con botón "¡Empezá hoy!" --> 
+            <!-- Sección de video con botón "¡Empezá hoy!" -->
             <section class="contenedor__sectorVideoBoton mb-5">
                 <div class="ratio ratio-16x9">
                     <video class="contenedor__sectorVideoBoton__video" autoplay muted loop>
@@ -112,14 +113,14 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <a class="contenedor__sectorVideoBoton__boton btn btn-dark btn-outline-light" href="./pages/contacto.html"
-                    role="button">¡EMPEZÁ HOY!</a>
+                <a class="contenedor__sectorVideoBoton__boton btn btn-dark btn-outline-light"
+                    href="./pages/contacto.html" role="button">¡EMPEZÁ HOY!</a>
             </section>
-            <!-- Sección Disciplinas --> 
-            <section id="seccion_disciplinas" class="contenedor__sectorDisciplinas">
+            <!-- Sección Disciplinas -->
+            <section id="seccion__disciplinas" class="contenedor__sectorDisciplinas mb-5">
                 <div class="contenedor__introduccion mb-5">
-                    <h2 class="contenedor__introduccion__título mb-4">DISCIPLINAS</h2>
-                    <p class="contenedor__introduccion__información">
+                    <h2 class="contenedor__introduccion__titulo mb-4">DISCIPLINAS</h2>
+                    <p class="contenedor__introduccion__informacion">
                         Acá tenemos todas las disciplinas disponibles que poseemos en este
                         increíble lugar. Revisalas y elige la que más te guste!
                     </p>
@@ -185,6 +186,50 @@
                     </div>
                 </div>
             </section>
+            <!-- Sección Profesores -->
+            <section id="seccion__profesores" class="contenedor__sectorProfesores my-5">
+                <div class="contenedor__introduccion mb-5">
+                    <h2 class="contenedor__introduccion__titulo mb-4">PROFESORES</h2>
+                    <p class="contenedor__introduccion__informacion">
+                        Este será el grupo de profesionales que te acompañarán durante
+                        el transcurso de tus clases, ¡No te los pierdas!
+                    </p>
+                </div>
+                <div class="contenedor__sectorProfesores__cartillas mt-5">
+                    <div class="cartilla__profesor">
+                        <div class="imagen__profesor"><img class="rounded-circle"
+                                src="https://previews.123rf.com/images/pixander/pixander2305/pixander230520079/204437893-hombre-atl%C3%A9tico-en-ropa-deportiva-posando-en-el-estadio.jpg"
+                                alt="Profesor Oscar Gonzalez"></div>
+                        <h3>Oscar Gonzalez</h3>
+                    </div>
+                    <div class="cartilla__profesor">
+                        <div class="imagen__profesor"><img class="rounded-circle"
+                                src="https://images.pexels.com/photos/2169434/pexels-photo-2169434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Profesora Yamila Acosta"></div>
+                        <h3>Yamila Acosta</h3>
+                    </div>
+                    <div class="cartilla__profesor">
+                        <div class="imagen__profesor"><img class="rounded-circle"
+                                src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Profesora Alicia Medina"></div>
+                        <h3>Alicia Medina</h3>
+                    </div>
+                </div>
+            </section>
+            <!-- Sección Beneficios -->
+            <section class="contenedor__sectorBeneficios mb-5">
+                <div class="contenedor__cartaBeneficios card text-start text-bg-dark p-3">
+                    <h3 class="card-header border-light my-3 pb-4">BENEFICIOS</h3>
+                    <div class="contenedor__cartaBeneficios__informacion card-body">
+                        <p class="contenedor__cartaBeneficios__informacion__texto card-text">
+                            Accede de manera ilimitada a un extenso catálogo de rutinas y programas de diversas
+                            disciplinas, permitiéndote entrenar a tu conveniencia, en nuestro centro deportivo al
+                            horario que más te convenga, ¡No te lo pierdas!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!--  Sección Empezá Hoy -->
         </main>
 
 
@@ -193,7 +238,7 @@
             <h3>Footer</h3>
         </footer>
     </div>
-    
+
     <!-- Script para Animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

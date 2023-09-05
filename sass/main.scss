@@ -9,7 +9,11 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 @use 'partials/galeria';
 @use 'partials/contacto'; */
 
+@use 'partials/configGeneral';
+
 @use 'partials/header';
 /* Main */
 @use 'partials/videoBoton';
 @use 'partials/disciplinas';
+@use 'partials/profesores';
+@use 'partials/beneficios';

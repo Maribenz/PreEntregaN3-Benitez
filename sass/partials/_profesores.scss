@@ -1,0 +1,134 @@
+@use './configGeneral';
+
+.contenedor__sectorProfesores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;         /* ¿Por qué se rompe el título al agregarle el flex? */
+        .contenedor__sectorProfesores__cartillas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 35rem;
+                .cartilla__profesor {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    width: 35rem;
+                    margin: 0px 5rem;
+                        .imagen__profesor {
+                            width: 100%;
+                            height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                        }    
+                }
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contenedor__sectorProfesores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+        .contenedor__cartillasProfesores {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+                .contenedor__cartillaProfesor {
+                    background-color: red;
+                    border: black solid 3px;
+                    width: 30px;
+                    height: 30px;
+                        .contenedor__imagenProfesor {
+                            width: 30px;
+                            height: 30px;
+                            overflow: hidden;
+                                .profesor__imagen {
+                                    object-fit: cover;
+                                    height: 30px;
+                                    width: 30px;
+                                }
+                        }
+                }
+        }
+} */
+
+/* .contenedor__sectorProfesores {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+        .contenedor__introduccion {
+            width: 50%;
+        }
+        .contenedor__cartillasProfesores {
+            background-color: red;
+            width: 100%;
+            height: auto;
+            .contenedor__imagenProfesor {
+                background-color: red;
+                    width: 30%;
+                    height: 30%;
+                    .img {
+                        width: 30px;
+                        height: 30px;
+                    }
+            }
+        }
+} */
+
+/* .contenedor__sectorProfesores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+    .contenedor__introduccion {
+        width: 50%;
+    }
+    .contenedor__cartillasProfesores {
+        background-color: green;
+        display: flex;
+        width: 100%;
+            .contenedor__profesor {
+                .contenedor__imagenProfesor {
+                    width: 200px;
+                    height: 200px;
+                    background-color: red;
+                }
+            }
+    }
+} */
