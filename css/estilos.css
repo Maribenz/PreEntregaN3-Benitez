@@ -19,6 +19,14 @@ html {
   font-size: 62.5%;
 }
 
+/* @use 'nombreDelArchivoConLoQueQuieraImportar' */
+/* Para usar la variable, por ejemplo, que esté en dicho archivo debo hacer 
+nombreDelArchivoConLoQueQuieraImportar.$laVariable */
+/* Al iniciar esto otra vez debo poner en la consola "sass --watch sass/main.scss css/estilos.css */
+/* @use 'partials/disciplinas';
+@use 'partials/quienesSomos';
+@use 'partials/galeria';
+@use 'partials/contacto'; */
 /* .nav-bar__personalizada {
     font-family: fantasy;
 } */
@@ -42,5 +50,27 @@ html {
         margin-right: 35px;
     }
 } */
+.contenedor__sectorVideoBoton {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.contenedor__sectorVideoBoton .contenedor__sectorVideoBoton__video {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.contenedor__sectorVideoBoton .contenedor__sectorVideoBoton__boton {
+  font-size: 2.5rem;
+  padding: 2rem;
+  width: auto;
+  height: auto;
+  position: absolute;
+  margin-bottom: 6rem;
+}
 
 /*# sourceMappingURL=estilos.css.map */

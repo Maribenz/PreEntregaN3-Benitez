@@ -39,7 +39,7 @@
     <div class="container-fluid">
         <!-- Contenido dentro del contenedor principal -->
 
-        <!-- Header --> 
+        <!-- HEADER --> 
         <header class="row mb-3">
             <!-- Barra de navegación -->
             <nav class="navbar__personalizada navbar sticky-top bg-dark navbar-expand-lg" data-bs-theme="dark">
@@ -102,15 +102,26 @@
                 </div>
             </nav>
         </header>
-
-        <!-- Resto del contenido dentro del contenedor principal -->
+        <!-- MAIN --> 
         <main class="row mb-3" style="background-color: grey;">
-            <h3>Main</h3>
+            <!-- Sección de video con botón "¡Empezá hoy!" --> 
+            <section class="contenedor__sectorVideoBoton mb-5">
+                <div class="ratio ratio-16x9">
+                    <video class="contenedor__sectorVideoBoton__video" autoplay muted loop>
+                        <source src="./assets/gymTotalVideo.mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <a class="contenedor__sectorVideoBoton__boton btn btn-dark btn-outline-light" href="./pages/contacto.html"
+                    role="button">¡EMPEZÁ HOY!</a>
+            </section>
             <!-- <section id="seccion__disciplinas">Soy la sección disciplinas</section> -->
         </main>
+
+
+        <!-- FOOTER -->
         <footer class="row" style="background-color:lightseagreen;">
             <h3>Footer</h3>
-        </div>
         </footer>
     </div>
     
