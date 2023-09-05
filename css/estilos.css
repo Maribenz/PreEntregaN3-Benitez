@@ -86,7 +86,7 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
   margin: 0;
   padding: 0;
 }
-.contenedor__sectorVideoBoton .contenedor__sectorVideoBoton__boton {
+.contenedor__sectorVideoBoton .contenedor__sectorVideoBoton__contacto {
   font-size: 2.5rem;
   padding: 2rem;
   width: auto;
@@ -253,16 +253,41 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 @use 'partials/quienesSomos';
 @use 'partials/galeria';
 @use 'partials/contacto'; */
-.contenedor__sectorBeneficios {
+.contenedor__promocion {
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 10rem;
 }
-.contenedor__sectorBeneficios .contenedor__cartaBeneficios {
+.contenedor__promocion .contenedor__cartaBeneficios {
   width: 81.5%;
 }
-.contenedor__sectorBeneficios .contenedor__cartaBeneficios .contenedor__cartaBeneficios__informacion__texto {
+.contenedor__promocion .contenedor__cartaBeneficios .contenedor__cartaBeneficios__informacion__texto {
   width: 70%;
+}
+
+/* @use 'nombreDelArchivoConLoQueQuieraImportar' */
+/* Para usar la variable, por ejemplo, que esté en dicho archivo debo hacer 
+nombreDelArchivoConLoQueQuieraImportar.$laVariable */
+/* Al iniciar esto otra vez debo poner en la consola "sass --watch sass/main.scss css/estilos.css */
+/*
+@use 'partials/quienesSomos';
+@use 'partials/galeria';
+@use 'partials/contacto'; */
+.contenedor__promocion__empezaHoy {
+  display: flex;
+  width: 81.5%; /* USA EL MISMO TAMAÑO QUE EL CONTENEDOR BENEFICOS*/
+}
+.contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton .contenedor__boton__contacto { /* ¿Por qué no me hereda las propiedades de la clase "contenedor__boton__contacto que provienen del archivo botonVideo? */
+  font-size: 2.5rem;
+  padding: 1rem 9rem;
+  width: auto;
+  height: auto;
 }
 
 /*# sourceMappingURL=estilos.css.map */

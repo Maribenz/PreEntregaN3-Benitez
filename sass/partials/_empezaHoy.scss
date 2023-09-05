@@ -1,0 +1,20 @@
+@use './configGeneral';
+@use './beneficios';
+
+.contenedor__promocion__empezaHoy {
+    display: flex;
+    width: 81.5%;   /* USA EL MISMO TAMAÑO QUE EL CONTENEDOR BENEFICOS*/ 
+        .contenedor__promocion__empezaHoy__boton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .contenedor__boton__contacto {  /* ¿Por qué no me hereda las propiedades de la clase "contenedor__boton__contacto que provienen del archivo botonVideo? */
+                font-size: 2.5rem;
+                padding: 1rem 9rem;
+                width: auto;
+                height: auto;
+            }
+        }
+
+}
+
