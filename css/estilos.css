@@ -3,7 +3,7 @@
 /* Para usar la variable, por ejemplo, que esté en dicho archivo debo hacer 
 nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 /* Al iniciar esto otra vez debo poner en la consola "sass --watch sass/main.scss css/estilos.css */
-/* @use 'partials/disciplinas';
+/*
 @use 'partials/quienesSomos';
 @use 'partials/galeria';
 @use 'partials/contacto'; */
@@ -19,14 +19,23 @@ html {
   font-size: 62.5%;
 }
 
-/* @use 'nombreDelArchivoConLoQueQuieraImportar' */
-/* Para usar la variable, por ejemplo, que esté en dicho archivo debo hacer 
-nombreDelArchivoConLoQueQuieraImportar.$laVariable */
-/* Al iniciar esto otra vez debo poner en la consola "sass --watch sass/main.scss css/estilos.css */
-/* @use 'partials/disciplinas';
-@use 'partials/quienesSomos';
-@use 'partials/galeria';
-@use 'partials/contacto'; */
+h2 {
+  font-size: 4.5rem;
+  color: aqua;
+  /* font-family: ; */
+}
+
+h3 {
+  font-size: 3rem;
+  /* font-family: ; */
+}
+
+p {
+  font-size: 2.5rem;
+  color: #fff;
+  /* font-family: ; */
+}
+
 /* .nav-bar__personalizada {
     font-family: fantasy;
 } */
@@ -45,11 +54,8 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
   font-size: 2rem;
 }
 
-/* .navbar-nav:first-child {
-    > .nav-item {
-        margin-right: 35px;
-    }
-} */
+/* Main */
+/* ¿Está bien usar la configuración general en cada uno de los archivos? */
 .contenedor__sectorVideoBoton {
   width: 100%;
   padding: 0;
@@ -71,6 +77,36 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
   height: auto;
   position: absolute;
   margin-bottom: 6rem;
+}
+
+.contenedor__sectorDisciplinas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contenedor__sectorDisciplinas .contenedor__introduccion {
+  width: 50%;
+}
+.contenedor__sectorDisciplinas .contenedor__cartillas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+.contenedor__sectorDisciplinas .contenedor__cartillas .carta__disciplina {
+  width: 50rem;
+  height: auto;
+}
+.contenedor__sectorDisciplinas .contenedor__cartillas .carta__disciplina .contenedor__cartillas__titulo a {
+  color: #fff;
+  text-decoration: none;
+}
+.contenedor__sectorDisciplinas .contenedor__cartillas .carta__disciplina img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=estilos.css.map */

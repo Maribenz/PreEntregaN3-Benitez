@@ -4,12 +4,12 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 
 /* Al iniciar esto otra vez debo poner en la consola "sass --watch sass/main.scss css/estilos.css */
 
-/* @use 'partials/disciplinas';
+/*
 @use 'partials/quienesSomos';
 @use 'partials/galeria';
 @use 'partials/contacto'; */
 
-
-@use 'partials/configGeneral';
 @use 'partials/header';
+/* Main */
 @use 'partials/videoBoton';
+@use 'partials/disciplinas';
