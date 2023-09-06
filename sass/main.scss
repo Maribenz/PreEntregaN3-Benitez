@@ -10,7 +10,9 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 @use 'partials/contacto'; */
 
 @use 'partials/configGeneral';
+@use 'partials/mediaQuerys';
 
+/* Header */
 @use 'partials/header';
 /* Main */
 @use 'partials/videoBoton';

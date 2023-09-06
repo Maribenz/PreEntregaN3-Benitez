@@ -7,9 +7,12 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 @use 'partials/quienesSomos';
 @use 'partials/galeria';
 @use 'partials/contacto'; */
+/* Tamaños de fuente */
 /* $fuenteParaTitulos:
 $fuenteParaSubTitulos:
 $fuenteParaContenidos: */
+/* Colores */
+/* Valores de BreakPoints */
 * {
   padding: 0px;
   margin: 0px;
@@ -17,6 +20,10 @@ $fuenteParaContenidos: */
 
 html {
   font-size: 62.5%;
+}
+
+.container-fluid {
+  background-color: #021013;
 }
 
 /* Títulos */
@@ -68,15 +75,27 @@ img {
   text-align: center;
 }
 
-/* .nav-bar__personalizada {
-    font-family: fantasy;
+/* @media (max-width: 320px) {
+    /* Estilos para pantallas con un ancho máximo de 320px
 } */
+@media (max-width: 992px) {
+  /* Estilos para pantallas con un ancho máximo de 320px */
+  .navbar__brand__personalizada {
+    font-size: 2.5rem;
+  }
+  .navbar__brand__personalizada img {
+    width: 60px/2;
+    height: 60px/2;
+    margin-left: 1rem;
+  }
+}
+/* Header */
 .navbar__personalizada .navbar__toggler__icon__personalizado {
   width: 3.5rem;
   height: 3.5rem;
 }
 .navbar__personalizada .nav-item {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-right: 35px;
 }
 .navbar__personalizada .dropdown-item {
@@ -268,9 +287,10 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 .footer__contenedor__redesSociales {
   display: flex;
   justify-content: end;
+  padding-right: 3rem;
 }
 .footer__contenedor__redesSociales a {
-  margin: 0px 0px;
+  margin: 0rem 3rem;
 }
 .footer__contenedor__redesSociales a img {
   width: 40px;

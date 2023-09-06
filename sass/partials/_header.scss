@@ -1,6 +1,4 @@
-/* .nav-bar__personalizada {
-    font-family: fantasy;
-} */
+@use './variables';
 
 .navbar__personalizada {
     .navbar__toggler__icon__personalizado {
@@ -8,10 +6,10 @@
         height: 3.5rem;
     }
     .nav-item {
-        font-size: 2.2rem;
+        font-size: variables.$tamanioDeFuenteNav;
         margin-right: 35px;
     }
     .dropdown-item {
-        font-size: 2rem;
+        font-size: variables.$tamanioDeFuenteNav;
     }
 }

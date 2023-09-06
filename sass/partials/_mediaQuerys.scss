@@ -1,3 +1,17 @@
 /* @media (max-width: 320px) {
     /* Estilos para pantallas con un ancho máximo de 320px
 } */
+
+@use './variables';
+
+@media (max-width: variables.$lg) {
+    /* Estilos para pantallas con un ancho máximo de 320px */
+    .navbar__brand__personalizada {
+        font-size: variables.$tamanioDeFuenteTituloLogoMd;
+            img {
+                width: 60px/2; 
+                height: 60px/2;
+                margin-left: 1rem;
+            }
+    }
+}

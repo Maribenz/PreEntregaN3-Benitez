@@ -7,6 +7,10 @@
 html {
     font-size: variables.$tamanioDeFuenteGeneral;
 } 
+.container-fluid {
+    background-color: variables.$negro;
+}
+
 
 /* Títulos */
 h2 {
@@ -33,7 +37,7 @@ img {
 
 /* Logo Título */
 .navbar__brand__personalizada {
-    font-size: 3.5rem;
+    font-size: variables.$tamanioDeFuenteTituloLogo;
         img {
             width: 60px; 
             height: 60px;
