@@ -7,6 +7,8 @@
 html {
     font-size: variables.$tamanioDeFuenteGeneral;
 } 
+
+/* Títulos */
 h2 {
     font-size: 4.5rem;
     color: aqua;
@@ -16,8 +18,39 @@ h3 {
     font-size: 3rem;
     /* font-family: ; */
 }
+/* Párrafos */
 p {
     font-size: 2.5rem;
     color: #fff;
     /* font-family: ; */
+}
+/* Imagenes */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Logo Título */
+.navbar__brand__personalizada {
+    font-size: 3.5rem;
+        img {
+            width: 60px; 
+            height: 60px;
+            margin-left: 1rem;
+        }
+}
+
+/* Botón contacto */
+.contenedor__boton__contacto {
+    font-size: 2.5rem;
+    padding: 1rem 9rem;
+    width: auto;
+    height: auto;
+}
+
+/* Información al comienzo de las secciones */
+.contenedor__introduccion {
+    width: 50%;
+    text-align: center;
 }
