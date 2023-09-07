@@ -95,3 +95,54 @@
         }
     }
 }
+
+/* Pantallas sm */
+@media (max-width: variables.$md) { 
+    h2 {
+        color:red;
+    }
+    /* Logo y título y resto del Nav */
+    .navbar__brand__personalizada {
+        font-size: variables.$tamanioDeFuenteTituloLogoSm;
+            img {
+                width: 40px; 
+                height: 40px;
+            }
+    }
+    .tira__submenues {
+        width: 40%;
+    }
+    .contenedor__carrousel {
+        display: none;
+    }
+    /* Sección Beneficios */
+    .contenedor__promocion {
+        height: auto;
+        width: 550px;
+        margin: 0 auto;
+        margin-top: 10rem;
+            .contenedor__cartaBeneficios {
+                margin: 0 auto;
+                width: 100%;
+            }
+    }
+    /* Sección Empezá Hoy*/ 
+    .contenedor__promocion__empezaHoy {
+        width: 576px;
+            .contenedor__promocion__empezaHoy__boton {
+                padding: auto;
+                    a {
+                        padding: 3px;
+                        font-size:variables.$tamanioDeFuenteBotonMd;
+                        background-color: red;
+                    }
+            }
+    }
+    /* Footer */ 
+    .footer__contenedor__redesSociales {
+        padding-right: 0;
+            a {
+                margin: 0 1rem;
+            }
+    }
+}

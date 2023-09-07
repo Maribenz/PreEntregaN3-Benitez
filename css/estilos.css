@@ -9,6 +9,7 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 @use 'partials/contacto'; */
 /* Tamaños de fuente */
 /* Tamaño de fuente pantallas md */
+/* Tamaño de fuente pantallas sm */
 /* $fuenteParaTitulos:
 $fuenteParaSubTitulos:
 $fuenteParaContenidos: */
@@ -327,6 +328,56 @@ a {
   .footer__contenedor__redesSociales a img {
     width: 30px;
     height: 30px;
+  }
+}
+/* Pantallas sm */
+@media (max-width: 768px) {
+  h2 {
+    color: red;
+  }
+  /* Logo y título y resto del Nav */
+  .navbar__brand__personalizada {
+    font-size: 2rem;
+  }
+  .navbar__brand__personalizada img {
+    width: 40px;
+    height: 40px;
+  }
+  .tira__submenues {
+    width: 40%;
+  }
+  .contenedor__carrousel {
+    display: none;
+  }
+  /* Sección Beneficios */
+  .contenedor__promocion {
+    height: auto;
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 10rem;
+  }
+  .contenedor__promocion .contenedor__cartaBeneficios {
+    margin: 0 auto;
+    width: 100%;
+  }
+  /* Sección Empezá Hoy*/
+  .contenedor__promocion__empezaHoy {
+    width: 576px;
+  }
+  .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton {
+    padding: auto;
+  }
+  .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton a {
+    padding: 3px;
+    font-size: 15px;
+    background-color: red;
+  }
+  /* Footer */
+  .footer__contenedor__redesSociales {
+    padding-right: 0;
+  }
+  .footer__contenedor__redesSociales a {
+    margin: 0 1rem;
   }
 }
 
