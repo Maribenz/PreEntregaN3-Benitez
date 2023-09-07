@@ -140,22 +140,16 @@ a {
 .contenedor__sectorProfesores {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-.contenedor__sectorProfesores .contenedor__profesoresHorizontal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contenedor__sectorProfesores .contenedor__profesoresHorizontal .contenedor__sectorProfesores__cartillas {
+.contenedor__sectorProfesores .contenedor__sectorProfesores__cartillas {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 35rem;
 }
-.contenedor__sectorProfesores .contenedor__profesoresHorizontal .contenedor__sectorProfesores__cartillas .cartilla__profesor {
+.contenedor__sectorProfesores .contenedor__sectorProfesores__cartillas .cartilla__profesor {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,39 +158,28 @@ a {
   width: 35rem;
   margin: 0px 5rem;
 }
-.contenedor__sectorProfesores .contenedor__profesoresHorizontal .contenedor__sectorProfesores__cartillas .cartilla__profesor .imagen__profesor {
+.contenedor__sectorProfesores .contenedor__sectorProfesores__cartillas .cartilla__profesor .imagen__profesor {
   width: 100%;
   height: 100%;
 }
 
 /* Carrousel */
-.contenedor__carrousel {
-  width: 500px;
-  height: auto;
-  padding-top: 5px;
-  display: none;
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.carousel-inner {
+.carousel-inner .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.carousel-item {
-  width: 100%;
-  height: 480px;
-}
-
-.imagen__carrousel {
-  width: 400px;
-  height: 400px;
-}
-
-.carousel-caption {
-  width: 50%;
-  height: auto;
-  position: absolute;
-  margin: 0 auto;
-  /* background-color: black; */
+.circular-image {
+  width: 200px; /* Ajusta el tamaño de las imágenes circulares según tus necesidades */
+  height: 200px;
+  border-radius: 50%;
 }
 
 .contenedor__promocion {
@@ -287,22 +270,6 @@ a {
     width: 35rem;
     height: auto;
   }
-  /* Sección Profesores */
-  .contenedor__carrousel {
-    display: inline-block;
-  }
-  .contenedor__sectorProfesores .contenedor__profesoresHorizontal {
-    display: none;
-  }
-  /* Sección Beneficios */
-  .contenedor__promocion {
-    width: 100%;
-    margin: 0 auto;
-    background-color: green;
-  }
-  .contenedor__promocion .contenedor__cartaBeneficios {
-    margin: 0 auto;
-  }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos,css.map */

@@ -50,4 +50,22 @@
                     }
             }
     }
+    /* Sección Profesores */ 
+    .contenedor__carrousel {
+        display: inline-block; 
+    }
+    .contenedor__sectorProfesores {
+            .contenedor__profesoresHorizontal {
+                display: none;
+            }
+    }
+    /* Sección Beneficios */
+    .contenedor__promocion {
+        width: 100%;
+        margin: 0 auto;
+        background-color: green;
+            .contenedor__cartaBeneficios {
+                margin: 0 auto;
+            }
+    }
 }
