@@ -7,15 +7,12 @@
             justify-content: center;
             flex-wrap: wrap;
             width: 100%;
-            text-align: center;
                 .carta__disciplina {
                     width: 50rem;
                     height: auto;
-                        .contenedor__cartillas__titulo {
-                                a {
-                                    color: #fff;
-                                    text-decoration: none;
-                                }
+                        .imagen__disciplina {
+                            height: 100%;
+                            width: 100%;
                         }
                 }
         }

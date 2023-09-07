@@ -8,6 +8,7 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 @use 'partials/galeria';
 @use 'partials/contacto'; */
 /* Tamaños de fuente */
+/* Tamaño de fuente pantallas md */
 /* $fuenteParaTitulos:
 $fuenteParaSubTitulos:
 $fuenteParaContenidos: */
@@ -28,8 +29,8 @@ html {
 
 /* Títulos */
 h2 {
-  font-size: 4.5rem;
-  color: aqua;
+  font-size: 3.5rem;
+  color: #fff;
   /* font-family: ; */
 }
 
@@ -38,9 +39,8 @@ h3 {
   /* font-family: ; */
 }
 
-/* Párrafos */
 p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fff;
   /* font-family: ; */
 }
@@ -49,6 +49,11 @@ p {
 img {
   width: 100%;
   height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Logo Título */
@@ -75,20 +80,6 @@ img {
   text-align: center;
 }
 
-/* @media (max-width: 320px) {
-    /* Estilos para pantallas con un ancho máximo de 320px
-} */
-@media (max-width: 992px) {
-  /* Estilos para pantallas con un ancho máximo de 320px */
-  .navbar__brand__personalizada {
-    font-size: 2.5rem;
-  }
-  .navbar__brand__personalizada img {
-    width: 60px/2;
-    height: 60px/2;
-    margin-left: 1rem;
-  }
-}
 /* Header */
 .navbar__personalizada .navbar__toggler__icon__personalizado {
   width: 3.5rem;
@@ -103,15 +94,6 @@ img {
 }
 
 /* Main */
-/* @use 'nombreDelArchivoConLoQueQuieraImportar' */
-/* Para usar la variable, por ejemplo, que esté en dicho archivo debo hacer 
-nombreDelArchivoConLoQueQuieraImportar.$laVariable */
-/* Al iniciar esto otra vez debo poner en la consola "sass --watch sass/main.scss css/estilos.css */
-/*
-@use 'partials/quienesSomos';
-@use 'partials/galeria';
-@use 'partials/contacto'; */
-/* ¿Está bien usar la configuración general en cada uno de los archivos? */
 .contenedor__sectorVideoBoton {
   width: 100%;
   padding: 0;
@@ -145,15 +127,14 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  text-align: center;
 }
 .contenedor__sectorDisciplinas .contenedor__cartillas .carta__disciplina {
   width: 50rem;
   height: auto;
 }
-.contenedor__sectorDisciplinas .contenedor__cartillas .carta__disciplina .contenedor__cartillas__titulo a {
-  color: #fff;
-  text-decoration: none;
+.contenedor__sectorDisciplinas .contenedor__cartillas .carta__disciplina .imagen__disciplina {
+  height: 100%;
+  width: 100%;
 }
 
 .contenedor__sectorProfesores {
@@ -295,6 +276,55 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 .footer__contenedor__redesSociales a img {
   width: 40px;
   height: 40px;
+}
+
+/* Pantallas md */
+@media (max-width: 992px) {
+  /* Configuracion general */
+  h2 {
+    font-size: 3rem;
+    /* font-family: ; */
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  /* Logo y título de Nav */
+  .navbar__brand__personalizada {
+    font-size: 2.5rem;
+  }
+  .navbar__brand__personalizada img {
+    width: 50px;
+    height: 50px;
+  }
+  /* Botón video contacto */
+  .contenedor__sectorVideoBoton .contenedor__sectorVideoBoton__contacto {
+    font-size: 15px;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-bottom: 2rem;
+  }
+  /* Sección Disciplinas */
+  .contenedor__sectorDisciplinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor__sectorDisciplinas .contenedor__cartillas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  .contenedor__sectorDisciplinas .contenedor__cartillas .carta__disciplina {
+    width: 35rem;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

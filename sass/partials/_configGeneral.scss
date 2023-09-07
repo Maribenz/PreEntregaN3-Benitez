@@ -14,17 +14,16 @@ html {
 
 /* Títulos */
 h2 {
-    font-size: 4.5rem;
-    color: aqua;
+    font-size: variables.$tamanioDeFuenteH2;
+    color: #fff;
     /* font-family: ; */
 }
 h3 {
-    font-size: 3rem;
+    font-size: variables.$tamanioDeFuenteH3;
     /* font-family: ; */
 }
-/* Párrafos */
 p {
-    font-size: 2.5rem;
+    font-size: variables.$tamanioDeFuenteP;
     color: #fff;
     /* font-family: ; */
 }
@@ -33,7 +32,10 @@ img {
     width: 100%;
     height: 100%;
 }
-
+a {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* Logo Título */
 .navbar__brand__personalizada {

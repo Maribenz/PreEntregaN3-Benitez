@@ -1,4 +1,4 @@
-@use './configGeneral'; /* ¿Está bien usar la configuración general en cada uno de los archivos? */
+@use './variables';
 
 .contenedor__sectorVideoBoton {
     width: 100%;
@@ -14,7 +14,7 @@
             padding: 0;
     }
     .contenedor__sectorVideoBoton__contacto {
-            font-size: 2.5rem;
+            font-size: variables.$tamanioDeFuenteBoton;
             padding: 2rem;
             width: auto;
             height: auto;

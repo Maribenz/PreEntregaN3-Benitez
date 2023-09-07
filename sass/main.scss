@@ -10,7 +10,6 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 @use 'partials/contacto'; */
 
 @use 'partials/configGeneral';
-@use 'partials/mediaQuerys';
 
 /* Header */
 @use 'partials/header';
@@ -21,3 +20,5 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 @use 'partials/beneficios';
 @use 'partials/empezaHoy';
 @use 'partials/footer';
+
+@use 'partials/mediaQueries';
