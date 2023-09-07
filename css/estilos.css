@@ -93,6 +93,10 @@ a {
   font-size: 2rem;
 }
 
+.tira__submenues {
+  padding: 0 5px;
+}
+
 /* Main */
 .contenedor__sectorVideoBoton {
   width: 100%;
@@ -144,7 +148,7 @@ a {
   align-items: center;
 }
 .contenedor__sectorProfesores .contenedor__profesoresHorizontal {
-  display: flex;
+  display: none; /* ESTÁ EN NONE CUIDADOOOOOOOOOOOOOOOOO */
   flex-direction: column;
   align-items: center;
 }
@@ -214,7 +218,7 @@ a {
 
 .contenedor__promocion__empezaHoy {
   display: flex;
-  width: 81.5%; /* USA EL MISMO TAMAÑO QUE EL CONTENEDOR BENEFICOS*/
+  width: 81.5%;
 }
 .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton {
   display: flex;
@@ -253,13 +257,16 @@ a {
   p {
     font-size: 1.5rem;
   }
-  /* Logo y título de Nav */
+  /* Logo y título y resto del Nav */
   .navbar__brand__personalizada {
     font-size: 2.5rem;
   }
   .navbar__brand__personalizada img {
     width: 50px;
     height: 50px;
+  }
+  .tira__submenues {
+    width: 20%;
   }
   /* Botón video contacto */
   .contenedor__sectorVideoBoton .contenedor__sectorVideoBoton__contacto {
@@ -296,12 +303,30 @@ a {
   }
   /* Sección Beneficios */
   .contenedor__promocion {
-    width: 100%;
+    height: auto;
+    width: 700px;
     margin: 0 auto;
-    background-color: green;
+    margin-top: 10rem;
   }
   .contenedor__promocion .contenedor__cartaBeneficios {
     margin: 0 auto;
+    width: 100%;
+  }
+  /* Sección Empezá Hoy */
+  .contenedor__promocion__empezaHoy {
+    width: 100%;
+  }
+  .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton {
+    padding: auto;
+  }
+  .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton a {
+    padding: 20px;
+    font-size: 15px;
+  }
+  /* Footer */
+  .footer__contenedor__redesSociales a img {
+    width: 30px;
+    height: 30px;
   }
 }
 

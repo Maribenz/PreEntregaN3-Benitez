@@ -14,14 +14,18 @@
     p {
         font-size: variables.$tamanioDeFuentePMd;
     }
-    /* Logo y título de Nav */
-    .navbar__brand__personalizada {
-        font-size: variables.$tamanioDeFuenteTituloLogoMd;
-            img {
-                width: 50px; 
-                height: 50px;
-            }
-    }
+    /* Logo y título y resto del Nav */
+        .navbar__brand__personalizada {
+            font-size: variables.$tamanioDeFuenteTituloLogoMd;
+                img {
+                    width: 50px; 
+                    height: 50px;
+                }
+        }
+        
+        .tira__submenues {
+            width: 20%;
+        }
     /* Botón video contacto */
     .contenedor__sectorVideoBoton {
         .contenedor__sectorVideoBoton__contacto {
@@ -61,11 +65,33 @@
     }
     /* Sección Beneficios */
     .contenedor__promocion {
-        width: 100%;
+        height: auto;
+        width: 700px;
         margin: 0 auto;
-        background-color: green;
+        margin-top: 10rem;
             .contenedor__cartaBeneficios {
                 margin: 0 auto;
+                width: 100%;
             }
+    }
+    /* Sección Empezá Hoy */
+    .contenedor__promocion__empezaHoy {
+        width: 100%;
+            .contenedor__promocion__empezaHoy__boton {
+                padding: auto;
+                    a {
+                        padding: 20px;
+                        font-size:variables.$tamanioDeFuenteBotonMd;
+                    }
+            }
+    }
+    /* Footer */
+    .footer__contenedor__redesSociales {
+        a {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
     }
 }

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
         .contenedor__profesoresHorizontal {
-            display: flex;
+            display: none; /* ESTÁ EN NONE CUIDADOOOOOOOOOOOOOOOOO */
             flex-direction: column;
             align-items: center;
             .contenedor__sectorProfesores__cartillas {
