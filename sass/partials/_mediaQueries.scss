@@ -22,7 +22,6 @@
                     height: 50px;
                 }
         }
-        
         .tira__submenues {
             width: 20%;
         }
@@ -99,9 +98,27 @@
 /* Pantallas sm */
 @media (max-width: variables.$md) { 
     h2 {
-        color:red;
+        color:rgb(17, 255, 0);
+        font-size: variables.$tamanioDeFuenteH2Sm;
+    }
+    h3 {
+        font-size: variables.$tamanioDeFuenteH3Sm;
+    }
+    p {
+        font-size: variables.$tamanioDeFuentePSm;
     }
     /* Logo y título y resto del Nav */
+    .navbar__personalizada {
+        .dropdown-item {
+            font-size: variables.$tamanioDeFuenteNavSm;
+        }
+    }
+    .navbar__ul__personalizada {
+            .navbar__li__personalizada {
+                margin: 0 auto;
+                font-size: variables.$tamanioDeFuenteNavSm;
+            }
+    }
     .navbar__brand__personalizada {
         font-size: variables.$tamanioDeFuenteTituloLogoSm;
             img {
@@ -110,39 +127,67 @@
             }
     }
     .tira__submenues {
-        width: 40%;
+        width: 100%;
+        font-size: 300px;
     }
+    /* Contenedores Introduccion */
+    .contenedor__introduccion {
+        width: 100%;
+        padding: 0 20px;
+    }
+    /* Seccion Profesores */
     .contenedor__carrousel {
         display: none;
     }
     /* Sección Beneficios */
     .contenedor__promocion {
-        height: auto;
-        width: 550px;
+        width: 350px;
         margin: 0 auto;
-        margin-top: 10rem;
             .contenedor__cartaBeneficios {
                 margin: 0 auto;
                 width: 100%;
-            }
-    }
-    /* Sección Empezá Hoy*/ 
-    .contenedor__promocion__empezaHoy {
-        width: 576px;
-            .contenedor__promocion__empezaHoy__boton {
-                padding: auto;
-                    a {
-                        padding: 3px;
-                        font-size:variables.$tamanioDeFuenteBotonMd;
-                        background-color: red;
+                    .contenedor__cartaBeneficios__informacion {
+                        padding-bottom: 0;
+                            .contenedor__cartaBeneficios__informacion__texto {
+                                width: 100%;
+                            }
                     }
             }
     }
-    /* Footer */ 
+    /* Sección Empezá Hoy*/ 
+    .contenedor__sectorEmpezaHoy {
+        .contenedor__promocion {
+            flex-direction: column;
+            .contenedor__promocion__empezaHoy__informacion {
+                width: 100%;
+                    .contenedor__promocion__empezaHoy__informacion__texto {
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid #fff;
+                        margin-bottom: 20px;
+                        width: 100%;
+                    }
+            }
+            .contenedor__promocion__empezaHoy__boton {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+    /* Footer */
+    .navbar__brand__personalizada {
+        margin-left: 0;
+    }
     .footer__contenedor__redesSociales {
         padding-right: 0;
             a {
                 margin: 0 1rem;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
             }
     }
 }
+
+
+

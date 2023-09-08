@@ -333,9 +333,23 @@ a {
 /* Pantallas sm */
 @media (max-width: 768px) {
   h2 {
-    color: red;
+    color: rgb(17, 255, 0);
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
   }
   /* Logo y título y resto del Nav */
+  .navbar__personalizada .dropdown-item {
+    font-size: 1.5rem;
+  }
+  .navbar__ul__personalizada .navbar__li__personalizada {
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
   .navbar__brand__personalizada {
     font-size: 2rem;
   }
@@ -344,40 +358,63 @@ a {
     height: 40px;
   }
   .tira__submenues {
-    width: 40%;
+    width: 100%;
+    font-size: 300px;
   }
+  /* Contenedores Introduccion */
+  .contenedor__introduccion {
+    width: 100%;
+    padding: 0 20px;
+  }
+  /* Seccion Profesores */
   .contenedor__carrousel {
     display: none;
   }
   /* Sección Beneficios */
   .contenedor__promocion {
-    height: auto;
-    width: 550px;
+    width: 350px;
     margin: 0 auto;
-    margin-top: 10rem;
   }
   .contenedor__promocion .contenedor__cartaBeneficios {
     margin: 0 auto;
     width: 100%;
   }
+  .contenedor__promocion .contenedor__cartaBeneficios .contenedor__cartaBeneficios__informacion {
+    padding-bottom: 0;
+  }
+  .contenedor__promocion .contenedor__cartaBeneficios .contenedor__cartaBeneficios__informacion .contenedor__cartaBeneficios__informacion__texto {
+    width: 100%;
+  }
   /* Sección Empezá Hoy*/
-  .contenedor__promocion__empezaHoy {
-    width: 576px;
+  .contenedor__sectorEmpezaHoy .contenedor__promocion {
+    flex-direction: column;
   }
-  .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton {
-    padding: auto;
+  .contenedor__sectorEmpezaHoy .contenedor__promocion .contenedor__promocion__empezaHoy__informacion {
+    width: 100%;
   }
-  .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton a {
-    padding: 3px;
-    font-size: 15px;
-    background-color: red;
+  .contenedor__sectorEmpezaHoy .contenedor__promocion .contenedor__promocion__empezaHoy__informacion .contenedor__promocion__empezaHoy__informacion__texto {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .contenedor__sectorEmpezaHoy .contenedor__promocion .contenedor__promocion__empezaHoy__boton {
+    width: 100%;
+    padding: 0;
   }
   /* Footer */
+  .navbar__brand__personalizada {
+    margin-left: 0;
+  }
   .footer__contenedor__redesSociales {
     padding-right: 0;
   }
   .footer__contenedor__redesSociales a {
     margin: 0 1rem;
+  }
+  .footer__contenedor__redesSociales a img {
+    width: 20px;
+    height: 20px;
   }
 }
 
