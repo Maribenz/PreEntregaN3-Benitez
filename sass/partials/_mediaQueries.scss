@@ -153,20 +153,31 @@
                     }
         }
     }
+    /* PÁGINA GALERÍA */
+    .contenedor__galeria {
+            .contenedor__galeria__fotos {
+                .contenedor__carrousel__galeria {
+                    width: 70%;
+                }
+        }
+    .contenedor__galeria__videos {
+            width: 80%;
+            height: auto;
+                .carousel {
+                    .carousel-inner {
+                        width: 100%;
+                        height: 100%;
+                        .carousel-item{
+                                iframe {
+                                    width: 120px;
+                                    width: 120px;
+                                }
+                        }
+                    }
+                }
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Pantallas sm */
 @media (max-width: variables.$md) {
@@ -350,5 +361,13 @@
                         font-size: variables.$tamanioFuenteFormularioSm;
                     }
         }
+    }
+    /* PÁGINA GALERÍA */ 
+    .contenedor__galeria {
+            .contenedor__galeria__fotos {
+                .contenedor__carrousel__galeria {
+                    width: 100%;
+                }
+        }   
     }
 }

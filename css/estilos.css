@@ -323,6 +323,53 @@ a {
   margin-bottom: 4rem;
 }
 
+/* Pagina Galería */
+.contenedor__galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor__galeria h1 {
+  border-bottom: 1px solid #fff;
+}
+.contenedor__galeria h2 {
+  border-bottom: 1px solid #fff;
+}
+.contenedor__galeria .contenedor__galeria__fotos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor__galeria .contenedor__galeria__fotos .contenedor__galeria__informacion {
+  padding: 0 10rem;
+}
+.contenedor__galeria .contenedor__galeria__fotos .contenedor__galeria__informacion p {
+  padding: 0 20px 10px 20px;
+  border-radius: 10px;
+}
+.contenedor__galeria .contenedor__galeria__fotos .contenedor__carrousel__galeria {
+  width: 50%;
+}
+.contenedor__galeria .contenedor__galeria__videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contenedor__galeria .contenedor__galeria__videos .contenedor__carrousel__galeria__videos {
+  width: 60%;
+}
+.contenedor__galeria .contenedor__galeria__videos .contenedor__carrousel__galeria__videos .carousel {
+  width: 100%;
+}
+.contenedor__galeria .contenedor__galeria__videos .contenedor__carrousel__galeria__videos .carousel .carousel-inner .carousel-item iframe {
+  width: 748px;
+  height: 480px;
+}
+
 /* Pantallas md */
 @media (max-width: 992px) {
   /* Configuracion general */
@@ -464,6 +511,22 @@ a {
   }
   .contenedor__inscripcion .contenedor__boton__formulario .boton__enviar__formulario {
     font-size: 1.8rem;
+  }
+  /* PÁGINA GALERÍA */
+  .contenedor__galeria .contenedor__galeria__fotos .contenedor__carrousel__galeria {
+    width: 70%;
+  }
+  .contenedor__galeria .contenedor__galeria__videos {
+    width: 80%;
+    height: auto;
+  }
+  .contenedor__galeria .contenedor__galeria__videos .carousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor__galeria .contenedor__galeria__videos .carousel .carousel-inner .carousel-item iframe {
+    width: 120px;
+    width: 120px;
   }
 }
 /* Pantallas sm */
@@ -620,6 +683,10 @@ a {
   }
   .contenedor__inscripcion .contenedor__boton__formulario .boton__enviar__formulario {
     font-size: 1.2rem;
+  }
+  /* PÁGINA GALERÍA */
+  .contenedor__galeria .contenedor__galeria__fotos .contenedor__carrousel__galeria {
+    width: 100%;
   }
 }
 
