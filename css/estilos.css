@@ -309,6 +309,20 @@ a {
   align-items: center;
 }
 
+/* Pagina Quienes Somos */
+.contenedor__quienesSomos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor__quienesSomos .contenedor__quienesSomos__informacion {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+
 /* Pantallas md */
 @media (max-width: 992px) {
   /* Configuracion general */
@@ -440,6 +454,9 @@ a {
     font-size: 1.8rem;
   }
   /* PÁGINA CONTACTO */
+  .contenedor__contacto__informacion {
+    text-align: center;
+  }
   .contenedor__inscripcion .contenedor__boton__formulario {
     display: flex;
     align-items: center;
