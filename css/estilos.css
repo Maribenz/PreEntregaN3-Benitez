@@ -262,15 +262,15 @@ a {
 }
 .contenedor__disciplinaDeporte .contenedor__carrousel__deporte .carousel {
   width: 500px;
-  height: 300px;
+  height: 350px;
 }
 .contenedor__disciplinaDeporte .contenedor__carrousel__deporte .carousel .carousel-inner {
   width: 500px;
-  height: 300px;
+  height: 350px;
 }
 .contenedor__disciplinaDeporte .contenedor__carrousel__deporte .carousel .carousel-inner .carousel-item img {
   width: 500px;
-  height: 300px;
+  height: 350px;
 }
 
 .contenedor__inscripcion {
@@ -543,20 +543,16 @@ a {
   /* Pantallas sm */
 }
 @media (max-width: 768px) and (max-width: 768px) {
-  .contenedor__disciplinaDeporte .contenedor__disciplinaDeporte__informacion .contenedor__carrousel__deporte {
-    width: 300px;
-    margin-bottom: 2rem;
-  }
   .contenedor__disciplinaDeporte .contenedor__disciplinaDeporte__informacion .contenedor__carrousel__deporte .carousel {
-    width: 200px;
+    width: 300px;
     height: 200px;
   }
   .contenedor__disciplinaDeporte .contenedor__disciplinaDeporte__informacion .contenedor__carrousel__deporte .carousel .carousel-inner {
-    width: 200px;
+    width: 300px;
     height: 200px;
   }
   .contenedor__disciplinaDeporte .contenedor__disciplinaDeporte__informacion .contenedor__carrousel__deporte .carousel .carousel-inner .carousel-item img {
-    width: 200px;
+    width: 300px;
     height: 200px;
   }
   .contenedor__disciplinaDeporte .contenedor__inscripcion .input-group span {

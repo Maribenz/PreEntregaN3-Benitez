@@ -13,14 +13,14 @@
         .contenedor__carrousel__deporte {
             .carousel {
                 width: 500px;
-                height: 300px;
+                height: 350px;
                 .carousel-inner {        
                     width: 500px;
-                    height: 300px;
+                    height: 350px;
                         .carousel-item {
                             img {
                                 width: 500px;
-                                height: 300px;
+                                height: 350px;
                             }
                         }
                 }
@@ -34,13 +34,13 @@
         h2 {
         padding-bottom: 2rem;
         }
-            .input-group {
-                span {
-                    font-size: variables.$tamanioFuenteFormulario;
-                }
-                .placeHolder__personalizado {
-                    font-size: variables.$tamanioFuenteFormularioPlaceHolder;
-                }
+        .input-group {
+            span {
+                font-size: variables.$tamanioFuenteFormulario;
+            }
+            .placeHolder__personalizado {
+                font-size: variables.$tamanioFuenteFormularioPlaceHolder;
+            }
         }
         button {
             width: auto;
