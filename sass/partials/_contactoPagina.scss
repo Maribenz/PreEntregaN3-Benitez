@@ -1,0 +1,15 @@
+@use './variables';
+
+.contenedor__contacto {
+    .contenedor__contacto__titulo {
+        margin: 5px;
+        border-bottom: 1px solid #fff;
+    }
+    .contenedor__mapa {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

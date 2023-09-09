@@ -129,17 +129,41 @@
             }
             .contenedor__inscripcion {
                 margin-top: 5rem;
-                    .contenedor__boton__deportes {
+                    .contenedor__boton__formulario {
                         display: flex;
                         justify-content: center;
-                        button {
-                            width: auto;
-                            font-size: variables.$tamanioFuenteFormulario;
-                        }
                     }
             }
+            .boton__enviar__formulario {
+                width: auto;
+                font-size: variables.$tamanioFuenteFormulario;
+            }
+    }
+    /* PÁGINA CONTACTO */
+    .contenedor__inscripcion {
+        .contenedor__boton__formulario {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                    .boton__enviar__formulario {
+                        font-size: variables.$tamanioFuenteFormulario;
+                    }
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Pantallas sm */
 @media (max-width: variables.$md) {
@@ -265,44 +289,63 @@
             }
         }
     }
-        /* PÁGINA DISCIPLINAS */
-/* Pantallas sm */
-
-@media (max-width: 768px) {
+    /* PAGINA DISCIPLINA */
     .contenedor__disciplinaDeporte {
-            .contenedor__disciplinaDeporte__informacion {
-                    .contenedor__carrousel__deporte {
-                            .carousel {
-                                width: 300px;
-                                height: 200px;
-                                    .carousel-inner {
-                                        width: 300px;
-                                        height: 200px;
-                                        .carousel-item {
-                                            img {
-                                                width: 300px;
-                                                height: 200px;
-                                            }
+        height: auto;
+        .contenedor__disciplinaDeporte__informacion {
+                .contenedor__carrousel__deporte {
+                        .carousel {
+                            width: 300px;
+                            height: 200px;
+                                .carousel-inner {
+                                    width: 300px;
+                                    height: 200px;
+                                    .carousel-item {
+                                        img {
+                                            width: 300px;
+                                            height: 200px;
                                         }
                                     }
-                            }
-                    }
-            }
-            .contenedor__inscripcion {
-                .input-group {
-                    span {
-                        font-size: variables.$tamanioFuenteFormularioSm;
-                    }
-                    .placeHolder__personalizado {
-                        font-size: variables.$tamanioFuenteFormularioPlaceHolderSm;
-                    }
-                }
-                .contenedor__boton__deportes {
-                        button {
-                            font-size: variables.$tamanioFuenteFormularioSm;
+                                }
                         }
                 }
+        }
+        .contenedor__inscripcion {
+            .input-group {
+                span {
+                    font-size: variables.$tamanioFuenteFormularioSm;
+                }
+                .placeHolder__personalizado {
+                    font-size: variables.$tamanioFuenteFormularioPlaceHolderSm;
+                }
             }
+            .contenedor__boton__deportes {
+                    button {
+                        font-size: variables.$tamanioFuenteFormularioSm;
+                    }
+            }
+        }
+    }
+    /* PÁGINA CONTACTO*/
+    .contenedor__mapa {
+        iframe {
+            max-width: 100%;
+            height: 300px;
+        }
+    }
+    .contenedor__inscripcion {
+        .input-group {
+            span {
+                font-size: variables.$tamanioFuenteFormularioSm;
+            }
+            .placeHolder__personalizado {
+                font-size: variables.$tamanioFuenteFormularioPlaceHolderSm;
+            }
+        }
+        .contenedor__boton__formulario {
+                    .boton__enviar__formulario {
+                        font-size: variables.$tamanioFuenteFormularioSm;
+                    }
         }
     }
 }

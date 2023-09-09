@@ -41,6 +41,10 @@ h3 {
   color: #fff;
 }
 
+h4 {
+  color: #fff;
+}
+
 p {
   font-size: 1.9rem;
   color: #fff;
@@ -287,9 +291,22 @@ a {
 .contenedor__inscripcion .input-group .placeHolder__personalizado {
   font-size: 1.3rem;
 }
-.contenedor__inscripcion button {
+.contenedor__inscripcion .boton__enviar__formulario {
   width: auto;
   font-size: 1.8rem;
+}
+
+/* Pagina Contacto */
+.contenedor__contacto .contenedor__contacto__titulo {
+  margin: 5px;
+  border-bottom: 1px solid #fff;
+}
+.contenedor__contacto .contenedor__mapa {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Pantallas md */
@@ -414,12 +431,21 @@ a {
   .contenedor__disciplinaDeporte .contenedor__inscripcion {
     margin-top: 5rem;
   }
-  .contenedor__disciplinaDeporte .contenedor__inscripcion .contenedor__boton__deportes {
+  .contenedor__disciplinaDeporte .contenedor__inscripcion .contenedor__boton__formulario {
     display: flex;
     justify-content: center;
   }
-  .contenedor__disciplinaDeporte .contenedor__inscripcion .contenedor__boton__deportes button {
+  .contenedor__disciplinaDeporte .boton__enviar__formulario {
     width: auto;
+    font-size: 1.8rem;
+  }
+  /* PÁGINA CONTACTO */
+  .contenedor__inscripcion .contenedor__boton__formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor__inscripcion .contenedor__boton__formulario .boton__enviar__formulario {
     font-size: 1.8rem;
   }
 }
@@ -539,10 +565,10 @@ a {
     width: 20px;
     height: 20px;
   }
-  /* PÁGINA DISCIPLINAS */
-  /* Pantallas sm */
-}
-@media (max-width: 768px) and (max-width: 768px) {
+  /* PAGINA DISCIPLINA */
+  .contenedor__disciplinaDeporte {
+    height: auto;
+  }
   .contenedor__disciplinaDeporte .contenedor__disciplinaDeporte__informacion .contenedor__carrousel__deporte .carousel {
     width: 300px;
     height: 200px;
@@ -562,6 +588,20 @@ a {
     font-size: 0.7rem;
   }
   .contenedor__disciplinaDeporte .contenedor__inscripcion .contenedor__boton__deportes button {
+    font-size: 1.2rem;
+  }
+  /* PÁGINA CONTACTO*/
+  .contenedor__mapa iframe {
+    max-width: 100%;
+    height: 300px;
+  }
+  .contenedor__inscripcion .input-group span {
+    font-size: 1.2rem;
+  }
+  .contenedor__inscripcion .input-group .placeHolder__personalizado {
+    font-size: 0.7rem;
+  }
+  .contenedor__inscripcion .contenedor__boton__formulario .boton__enviar__formulario {
     font-size: 1.2rem;
   }
 }
