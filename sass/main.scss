@@ -15,10 +15,13 @@ nombreDelArchivoConLoQueQuieraImportar.$laVariable */
 @use 'partials/header';
 /* Main */
 @use 'partials/videoBoton';
-@use 'partials/disciplinas';
+@use 'partials/sectorDisciplinas';
 @use 'partials/profesores';
 @use 'partials/beneficios';
 @use 'partials/empezaHoy';
 @use 'partials/footer';
+
+/* Pagina Disciplinas */
+@use 'partials/disciplinaPagina';
 
 @use 'partials/mediaQueries';

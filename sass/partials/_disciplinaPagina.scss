@@ -1,0 +1,49 @@
+@use './variables';
+
+.contenedor__disciplinaDeporte {
+    height: 110rem;
+    padding: 0 2rem;
+        .contenedor__disciplinaDeporte__titulo {
+            margin: 5px;
+            border-bottom: 1px solid #fff;
+        }
+        .contenedor__horarios {
+            border-radius: 10px;
+        }
+        .contenedor__carrousel__deporte {
+            .carousel {
+                width: 500px;
+                height: 300px;
+                .carousel-inner {        
+                    width: 500px;
+                    height: 300px;
+                        .carousel-item {
+                            img {
+                                width: 500px;
+                                height: 300px;
+                            }
+                        }
+                }
+            }
+        }
+}
+.contenedor__inscripcion {
+    width: 70%;
+    margin: 15rem 0 0 0;
+    border-radius: 10px;
+        h2 {
+        padding-bottom: 2rem;
+        }
+            .input-group {
+                span {
+                    font-size: variables.$tamanioFuenteFormulario;
+                }
+                .placeHolder__personalizado {
+                    font-size: variables.$tamanioFuenteFormularioPlaceHolder;
+                }
+        }
+        button {
+            width: auto;
+            font-size: variables.$tamanioFuenteFormulario;
+        }
+}

@@ -110,6 +110,35 @@
             }
         }
     }
+
+    /* PÁGINA DISCIPLINAS */
+    .contenedor__disciplinaDeporte {
+        height: 115rem;
+            .contenedor__disciplinaDeporte__informacion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                    .contenedor__carrousel__deporte {
+                        width: 100%;
+                        margin-bottom: 2rem;
+                    }
+                    .contenedor__horarios {
+                        width: 100%;
+                    }
+            }
+            .contenedor__inscripcion {
+                margin-top: 5rem;
+                    .contenedor__boton__deportes {
+                        display: flex;
+                        justify-content: center;
+                        button {
+                            width: auto;
+                            font-size: variables.$tamanioFuenteFormulario;
+                        }
+                    }
+            }
+    }
 }
 
 /* Pantallas sm */
@@ -154,7 +183,6 @@
             margin-bottom: 0.5rem;
         }
     }
-
     /* Contenedores Introduccion */
     .contenedor__introduccion {
         width: 100%;
@@ -234,6 +262,48 @@
             img {
                 width: 20px;
                 height: 20px;
+            }
+        }
+    }
+        /* PÁGINA DISCIPLINAS */
+/* Pantallas sm */
+
+@media (max-width: 768px) {
+    .contenedor__disciplinaDeporte {
+            .contenedor__disciplinaDeporte__informacion {
+                    .contenedor__carrousel__deporte {
+                        width: 300px;
+                        margin-bottom: 2rem;
+                            .carousel {
+                                width: 200px;
+                                height: 200px;
+                                    .carousel-inner {
+                                        width: 200px;
+                                        height: 200px;
+                                        .carousel-item {
+                                            img {
+                                                width: 200px;
+                                                height: 200px;
+                                            }
+                                        }
+                                    }
+                            }
+                    }
+            }
+            .contenedor__inscripcion {
+                .input-group {
+                    span {
+                        font-size: variables.$tamanioFuenteFormularioSm;
+                    }
+                    .placeHolder__personalizado {
+                        font-size: variables.$tamanioFuenteFormularioPlaceHolderSm;
+                    }
+                }
+                .contenedor__boton__deportes {
+                        button {
+                            font-size: variables.$tamanioFuenteFormularioSm;
+                        }
+                }
             }
         }
     }

@@ -11,21 +11,26 @@ html {
     background-color: variables.$negro;
 }
 
-
 /* Títulos */
+h1 {
+    font-size: variables.$tamanioDeFuenteH1;
+    color: #fff;
+}
 h2 {
     font-size: variables.$tamanioDeFuenteH2;
     color: #fff;
-    /* font-family: ; */
 }
 h3 {
     font-size: variables.$tamanioDeFuenteH3;
-    /* font-family: ; */
+    color: #fff;
 }
 p {
     font-size: variables.$tamanioDeFuenteP;
     color: #fff;
-    /* font-family: ; */
+}
+.span__personalizado {
+    font-size: 200px;
+    color:red;
 }
 /* Imagenes */
 img {
