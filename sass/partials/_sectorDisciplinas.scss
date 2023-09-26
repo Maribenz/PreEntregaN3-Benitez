@@ -1,7 +1,8 @@
+@use './variables';
+@use './configGeneral';
+
 .contenedor__sectorDisciplinas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .contenedorAlineado;
         .contenedor__cartillas {
             display: flex;
             justify-content: center;

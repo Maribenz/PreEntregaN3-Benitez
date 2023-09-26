@@ -1,8 +1,7 @@
+@use './configGeneral';
+
 .contenedor__sectorProfesores {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .contenedorAlineado;
         .contenedor__profesoresHorizontal {
             .contenedor__sectorProfesores__cartillas {
                 display: flex;

@@ -1,8 +1,7 @@
+@use './configGeneral';
+
 .contenedor__galeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .contenedorAlineado;
         h1 {
             border-bottom: 1px solid #fff;
         }
@@ -10,13 +9,10 @@
             border-bottom: 1px solid #fff;
         }
         .contenedor__galeria__fotos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+            @extend .contenedorAlineado;
             .contenedor__galeria__informacion {
                 padding: 0 10rem;
-                    p {
+                    p{
                         padding: 0 20px 10px 20px;
                         border-radius: 10px;
                     }

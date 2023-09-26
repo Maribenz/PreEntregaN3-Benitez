@@ -368,6 +368,14 @@
                 .contenedor__carrousel__galeria {
                     width: 100%;
                 }
-        }   
+                
+            .contenedor__galeria__informacion {
+                width: 100%;
+                padding: 0 0;
+                p {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

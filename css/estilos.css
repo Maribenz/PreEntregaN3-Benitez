@@ -1,12 +1,5 @@
 @charset "UTF-8";
-/* @use 'nombreDelArchivoConLoQueQuieraImportar' */
-/* Para usar la variable, por ejemplo, que esté en dicho archivo debo hacer 
-nombreDelArchivoConLoQueQuieraImportar.$laVariable */
-/* Al iniciar esto otra vez debo poner en la consola "sass --watch sass/main.scss css/estilos.css */
-/*
-@use 'partials/quienesSomos';
-@use 'partials/galeria';
-@use 'partials/contacto'; */
+/* Configuración General */
 /* Tamaños de fuente */
 /* Tamaño de fuente pantallas md */
 /* Tamaño de fuente pantallas sm */
@@ -52,7 +45,6 @@ p {
 
 .span__personalizado {
   font-size: 200px;
-  color: red;
 }
 
 /* Imagenes */
@@ -90,6 +82,15 @@ a {
   text-align: center;
 }
 
+/* Contenedor flex, columna, centrado y contenido justify */
+.contenedorAlineado, .contenedor__galeria, .contenedor__galeria .contenedor__galeria__fotos, .contenedor__quienesSomos, .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton, .contenedor__sectorProfesores, .contenedor__sectorDisciplinas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pagina index */
 /* Header */
 .navbar__personalizada .navbar__toggler__icon__personalizado {
   width: 3.5rem;
@@ -131,11 +132,7 @@ a {
   margin-bottom: 6rem;
 }
 
-.contenedor__sectorDisciplinas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* Configuración General */
 .contenedor__sectorDisciplinas .contenedor__cartillas {
   display: flex;
   justify-content: center;
@@ -151,12 +148,7 @@ a {
   width: 100%;
 }
 
-.contenedor__sectorProfesores {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/* Configuración General */
 .contenedor__sectorProfesores .contenedor__profesoresHorizontal .contenedor__sectorProfesores__cartillas {
   display: flex;
   justify-content: center;
@@ -220,14 +212,13 @@ a {
   width: 70%;
 }
 
+/* Configuración General */
 .contenedor__promocion__empezaHoy {
   display: flex;
   width: 81.5%;
 }
 .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
 }
 .contenedor__promocion__empezaHoy .contenedor__promocion__empezaHoy__boton .contenedor__boton__contacto {
   font-size: 1.8rem;
@@ -310,12 +301,7 @@ a {
 }
 
 /* Pagina Quienes Somos */
-.contenedor__quienesSomos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/* Configuración General */
 .contenedor__quienesSomos .contenedor__quienesSomos__informacion {
   text-align: center;
   padding: 10px;
@@ -324,23 +310,12 @@ a {
 }
 
 /* Pagina Galería */
-.contenedor__galeria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/* Configuración General */
 .contenedor__galeria h1 {
   border-bottom: 1px solid #fff;
 }
 .contenedor__galeria h2 {
   border-bottom: 1px solid #fff;
-}
-.contenedor__galeria .contenedor__galeria__fotos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .contenedor__galeria .contenedor__galeria__fotos .contenedor__galeria__informacion {
   padding: 0 10rem;
@@ -370,6 +345,7 @@ a {
   height: 480px;
 }
 
+/* Media Queries */
 /* Pantallas md */
 @media (max-width: 992px) {
   /* Configuracion general */
@@ -686,6 +662,13 @@ a {
   }
   /* PÁGINA GALERÍA */
   .contenedor__galeria .contenedor__galeria__fotos .contenedor__carrousel__galeria {
+    width: 100%;
+  }
+  .contenedor__galeria .contenedor__galeria__fotos .contenedor__galeria__informacion {
+    width: 100%;
+    padding: 0 0;
+  }
+  .contenedor__galeria .contenedor__galeria__fotos .contenedor__galeria__informacion p {
     width: 100%;
   }
 }

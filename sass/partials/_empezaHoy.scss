@@ -1,12 +1,12 @@
 @use './variables';
+@use './configGeneral';
 
 .contenedor__promocion__empezaHoy {
     display: flex;
     width: 81.5%; 
         .contenedor__promocion__empezaHoy__boton {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @extend .contenedorAlineado;
+            flex-direction: row;
                 .contenedor__boton__contacto {
                     font-size: variables.$tamanioDeFuenteBoton;
                     padding: 20px;

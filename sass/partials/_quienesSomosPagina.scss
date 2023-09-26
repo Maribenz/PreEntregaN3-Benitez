@@ -1,8 +1,7 @@
+@use './configGeneral';
+
 .contenedor__quienesSomos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @extend .contenedorAlineado;
         .contenedor__quienesSomos__informacion {
             text-align: center;
             padding: 10px;

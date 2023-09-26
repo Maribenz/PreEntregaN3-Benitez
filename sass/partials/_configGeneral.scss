@@ -33,7 +33,6 @@ p {
 }
 .span__personalizado {
     font-size: 200px;
-    color:red;
 }
 /* Imagenes */
 img {
@@ -67,4 +66,13 @@ a {
 .contenedor__introduccion {
     width: 50%;
     text-align: center;
+}
+
+/* Contenedor flex, columna, centrado y contenido justify */
+
+.contenedorAlineado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
